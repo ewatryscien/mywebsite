@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Roboto+Condensed:wght@300&family=Lato:wght@300&family=Source+Code+Pro&family=Abel&family=Open+Sans+Condensed:wght@300&family=Work+Sans&display=swap');
 
 html {
     font-size: 62.5%;
@@ -6,13 +6,13 @@ html {
 
 body {
     font-size: 1.6em;
-    font-family: 'Amatic SC', Helvetica, sans-serif;
+    font-family: 'Roboto Condensed', 'Lato', 'Amatic SC', sans-serif;
     color: black;
     background-image: url("../img/spongebob.webp");
     background-size: 10em;
     background-repeat: no-repeat;
     background-position: center;
-    
+    background-position-y: 340px;
 
 }
 
@@ -46,7 +46,7 @@ h2 {
 .circles-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-   
+    margin: 100px;
 }
 
 .circle {
@@ -71,6 +71,7 @@ h2 {
 .about {
     background-color: #b18af1;
     margin-left: 50px;
+    margin-top: 150px;
 }
 
 .education {
@@ -88,7 +89,7 @@ h2 {
 
 .skills {
     background-color: #80c4ff;
-
+    margin-top: 150px;
 }
 
 .contact {
