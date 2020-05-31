@@ -18,12 +18,11 @@ body {
 }
 
 .title-wrapper {
-    margin: 6rem 6rem 20rem 6rem;
     text-align: center;    
 }
 
 h1 {
-    margin-top: 20rem;
+
 
 }
 
@@ -33,10 +32,9 @@ a {
 
 h2 {
     font-size: 1.6rem;
-    /*margin: 1em;*/
     color: white;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 5rem;
 }
 
 .circles-container {
@@ -46,10 +44,10 @@ h2 {
 }
 
 .circle {
-    height: 120px;
-    width: 120px;
-    border-radius: 60px 60px;
-    box-shadow: 5px 2px rgba(0, 0, 0, 0.18);
+    height: 12rem;
+    width: 12rem;
+    border-radius: 6rem 6rem;
+    box-shadow: 0.5rem 0.2rem rgba(0, 0, 0, 0.18);
 }
 
 .circle:hover {
@@ -57,43 +55,35 @@ h2 {
 }
 
 .circle:active {
-    height: 100px;
-    width: 100px;
-    border-radius: 50px 50px;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 5rem 5rem;
     background-color: #cb98ff92;
-    font-size: 0.7em;
+    font-size: 0.7rem;
 }
 
 .about {
     background-color: #b18af1;
-    margin-left: 50px;
-    margin-top: 150px;
+    margin-left: 5rem;
+    margin-top: 15rem;
 }
 
 .education {
     background-color: blueviolet;
-    margin-left: 20px;
-    margin-top: 50px;
+    margin-left: 2rem;
+    margin-top: 5rem;
 }
 
 .work {
     background-color: #4b48f3;
-    margin-left: 20px;
-    margin-top: 50px;
+    margin-left: 2rem;
+    margin-top: 5rem;
 
 }
 
 .skills {
     background-color: #80c4ff;
-    margin-top: 150px;
-}
-
-.contact {
-
-}
-
-.content-container {
-
+    margin-top: 15rem;
 }
 
 .section-wrapper {
@@ -101,16 +91,15 @@ h2 {
     grid-template-columns: 2fr 1fr;
 }
 
+.chapter {
+    padding: 5rem;
+}
+
 h3 {
     font-size: 3rem;
 }
 
-.about-section {
-
-}
-
 .education-section {
-
     background-color: rgb(232, 209, 255);
 }
 
@@ -119,14 +108,13 @@ h3 {
 }
 
 .timeline-content {
-    margin-top: 50px;
+    margin-top: 5rem;
     text-align: center;  
 }
 
 h4 {
-    letter-spacing: 1.5px;
     font-weight: 400;
-    font-size: 1.4em;
+    font-size: 2.8rem;
 }
 
 .timeline {
@@ -190,22 +178,11 @@ h4 {
             top: 5px;
             background-color: mediumblue;
         }
-    
-
-
-
-
-
-.skills-section {
-
-}
 
 #spongebob2 {
-    height: 180px;
-    margin-left: 100px;
+    height: 18rem;
+    margin-left: 10rem;
 }
 
-.chapter {
-    padding: 50px;
-}
+
 
