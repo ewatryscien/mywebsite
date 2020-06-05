@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <script src="javascript/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -36,28 +37,26 @@
     <div class="main-hero">
       <div class="circles-container">
 
-        <a href="#about">
-          <div class="about circle">
+        <a href="#about" id="about-circle">
+          <button class="about circle">About me</button>
+     <!--     <div class="about circle">
             <h2>About me</h2>
-          </div>
+          </div>-->
         </a>
 
         <a href="#education">
-          <div class="education circle">
+          <button class="education circle">Education</button>
+      <!--    <div class="education circle">
             <h2>Education</h2>
-          </div>
+          </div>-->
         </a>
         
         <a href="#work">
-          <div class="work circle">
-            <h2>Work experience</h2>
-          </div>
+          <button class="work circle">Work experience</button>
         </a>
 
         <a href="#skills">
-          <div class="skills circle">
-            <h2>Skills</h2>
-          </div>
+          <button class="skills circle">Skills</button>
         </a>
 
       <!--
@@ -80,8 +79,8 @@
         <h3>About me...</h3>
         <div class="section-wrapper">
           <p class="section-text">
-            International, bi-lingual Computer Science graduate 
-            keen to learn new technologies and work as part of a team.
+            International, bi-lingual Computer Science graduate based in London.
+            Keen to learn new technologies and work as part of a team.
             I’m particularly interested in front-end and client facing 
             application development.  
           </p>
@@ -92,7 +91,7 @@
       <div class="education-section chapter" id="education">
         <h3>Education</h3>
         <div class="section-wrapper">
-          <p>Wroclaw University of Science and Technology – Bachelor of Computer Science</p>
+          <p class="paragraph-title">Wroclaw University of Science and Technology – Bachelor of Computer Science</p>
           <p>October 2013 – July 2017</p>
           <p>• Worked as part of a team building a smart home consumer product in collaboration
              with Thaumatec company, responsible for the front end, writing JavaScript HTML and CSS</p>
@@ -101,6 +100,8 @@
 
       <div class="work-section chapter" id="work">
         <h3>Work experience</h3>
+
+        
             <div class="timeline-content">
 
               <ul class="timeline">
@@ -138,18 +139,18 @@
         <!--<div class="section-wrapper">-->
           <h5>Programming technologies</h5>
             <ul>
-              <li>JavaScript</li>
-              <p>opis</p>
-              <li>HTML</li>
-              <p>opis</p>
-              <li>CSS</li>
-              <p>opis</p>
-              <li>Java</li>
-              <p>opis</p>
+              <li class="paragraph-title">JavaScript</li>
+              <p>Fixed bugs on customer websites, and imported and created content for a new website using WordPress</p>
+              <li class="paragraph-title">HTML</li>
+              <p>Designed and built a dynamic web form for data capture using CSS, HTML, and PHP</p>
+              <li class="paragraph-title">CSS</li>
+              <p>Designed and built a dynamic web form for data capture using CSS, HTML, and PHP</p>
+              <li class="paragraph-title">Java</li>
+              <p>Worked on the Java backend, reporting, and charting data features on the web based front end using SQL and the Vaadin framework</p>
             </ul>   
           <h5>Technologies?</h5>
             <ul>
-              <li>Agile - Scrum</li>
+              <li class="paragraph-title">Agile - Scrum</li>
             </ul>
           <h5>Languages</h5>
           <ul>
@@ -164,23 +165,20 @@
         </div> 
       </div>
 
-      <div class="contact-section chapter" id="contact">
-        <h3>Contact me</h3>
-        <p>Email: ewa.tryscien@gmail.com</p>
-        <div class="socialmedia">
-          <a href="https://www.linkedin.com/in/ewa-try%C5%9Bcie%C5%84-b20545140/" target="_blank" class="fa fa-linkedin icons"></a>
-          <a href="https://www.facebook.com/ewa.tryscien" target="_blank" class="fa fa-facebook icons"></a>
-          <a href="https://www.instagram.com/autobussiespoznil/" target="_blank" class="fa fa-instagram icons"></a>
-          <a href="https://www.linkedin.com/in/ewa-try%C5%9Bcie%C5%84-b20545140/" target="_blank" class="fa fa-github icons"></a>
-        </div> 
-      </div>
-
     </div>
 
-    <footer class="footercolor">
-      <button id="change">Switch colour</button>
 
+    <footer class="contact-section chapter" id="contact">
+      <h3>Contact me</h3>
+      <p>Email: ewa.tryscien@gmail.com</p>
+      <div class="socialmedia">
+        <a href="https://www.linkedin.com/in/ewa-try%C5%9Bcie%C5%84-b20545140/" target="_blank" class="fa fa-linkedin icons"></a>
+        <a href="https://www.facebook.com/ewa.tryscien" target="_blank" class="fa fa-facebook icons"></a>
+        <a href="https://www.instagram.com/autobussiespoznil/" target="_blank" class="fa fa-instagram icons"></a>
+        <a href="https://www.linkedin.com/in/ewa-try%C5%9Bcie%C5%84-b20545140/" target="_blank" class="fa fa-github icons"></a>
+      </div> 
 
+      <button class="theme-button" id="theme">Dark theme</button>
     </footer>
   
   </div>
