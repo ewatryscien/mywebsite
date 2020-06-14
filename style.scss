@@ -6,7 +6,7 @@ $light-background : #f3ffd0;
 
 html {
     font-size: 62.5%;
-    scroll-behavior: smooth;
+    //scroll-behavior: smooth;
 }
 
 body {
@@ -174,9 +174,9 @@ h2 {
 
 /* GRID IN ABOUT AND SKILLS SECTION */
 .section-wrapper {
-    display: grid;
+    /*display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-gap: 1rem;
+    grid-gap: 1rem;*/
 
     @media screen and (max-width: 495px) {
         display: block;
@@ -243,7 +243,8 @@ h4 {
     }
 
     @media screen and (max-width: 630px) {
-        margin: 5rem 0 5rem 3rem;
+        margin: 5rem 0 0 0rem;
+        padding: 1rem 0 1rem 4rem;
     }
 }
 
@@ -342,7 +343,7 @@ h4 {
 
 .box .time span {
     position: absolute;
-    left: -25rem;
+    left: -21rem;
     color: #fff;
     font-size: 80%;
 
@@ -353,16 +354,16 @@ h4 {
 
     @media screen and (max-width: 630px) {
         position: absolute;
-        left: -15rem;
+        left: -11rem;
     }
 }
 
 .box .time span:first-child {
-    top: -16px
+    top: -1rem;
 }
 
 .box .time span:last-child {
-    top: 94%
+    top: 94%;
 }
 
 
