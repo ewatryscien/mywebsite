@@ -138,14 +138,16 @@ h2 {
     }
 }
 .circle:hover {
-    background-color: #cb98ff92;
+    background-color: $navy-blue;
+    color: white;
     cursor: pointer;
 }
 .circle:active {
     height: 10rem;
     width: 10rem;
     border-radius: 5rem 5rem;
-    background-color: #cb98ff92;
+    background-color: $navy-blue;
+    color: white;
     font-size: 0.7rem;
 }
 
