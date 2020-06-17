@@ -1,8 +1,11 @@
+@import "dark-theme.css";
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Roboto+Condensed:wght@300;700&family=Lato:wght@300&family=Source+Code+Pro&family=Abel&family=Open+Sans+Condensed:wght@300&family=Work+Sans&display=swap");
 
 /* Variables */
 
-$light-background : #f3ffd0;
+$light-background: #f3ffd0;
+$pink: #f6a5c7;
+$navy-blue: #0f0944;
 
 html {
     font-size: 62.5%;
@@ -15,11 +18,17 @@ body {
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 300;
     color: black;
-    background-image: url("../img/ewa.png");
+    background-image: url("../img/ewa-av-transparent.png");
     background-size: 30em;
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: 13rem;
+
+    @media screen and (prefers-color-scheme: dark) {
+        color: red;
+        background-color: blue;
+        font-size: 7rem;
+   }
 
     @media screen and (max-width: 768px) {
         font-size: 1.8rem;
@@ -32,6 +41,12 @@ body {
     }
 }
 
+/*
+@media only screen and (prefers-color-scheme: dark) {
+    body { background: blue; }
+    h1 { color: orangered; }
+    p { color: white; }
+  }*/
 
 .main-hero {
     margin: 4rem;
@@ -106,7 +121,7 @@ h2 {
     border-radius: 8rem 8rem;
     box-shadow: 0.5rem 0.2rem rgba(0, 0, 0, 0.18);
     outline: none;
-    color: white;
+    color: $navy-blue;
     font-family: 'Roboto Condensed', "Lato", "Amatic SC", sans-serif;
     font-size: 1.9rem;
     border: none;
@@ -137,7 +152,7 @@ h2 {
 /* CIRCLES */ 
 
 .about {
-    background-color: #0f0944;
+    background-color: $pink;
     margin-top: 15rem;
 
     @media screen and (max-width: 495px) {
@@ -146,7 +161,7 @@ h2 {
 }
 
 .education {
-    background-color: #0f0944;
+    background-color: $pink;
     margin-top: 5rem;
 
     @media screen and (max-width: 495px) {
@@ -155,7 +170,7 @@ h2 {
 }
 
 .work {
-    background-color: #0f0944;  
+    background-color: $pink; 
     margin-top: 5rem;
 
     @media screen and (max-width: 495px) {
@@ -164,7 +179,7 @@ h2 {
 }
 
 .skills {
-    background-color: #0f0944;
+    background-color: $pink;
     margin-top: 15rem;
 
     @media screen and (max-width: 495px) {
@@ -214,6 +229,11 @@ h3 {
 .about-section {
     background-color: #0f0944;
     color: white;
+
+    @media only screen and (prefers-color-scheme: dark) {
+        color: red;
+        background-color: green;  
+   }
 }
 
 
