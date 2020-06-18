@@ -25,9 +25,7 @@ body {
     background-position-y: 13rem;
 
     @media screen and (prefers-color-scheme: dark) {
-        color: red;
-        background-color: blue;
-        font-size: 7rem;
+
    }
 
     @media screen and (max-width: 768px) {
@@ -233,8 +231,7 @@ h3 {
     color: white;
 
     @media only screen and (prefers-color-scheme: dark) {
-        color: red;
-        background-color: green;  
+
    }
 }
 
