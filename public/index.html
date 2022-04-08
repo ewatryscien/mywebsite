@@ -1,266 +1,285 @@
-<!doctype html>
+<!DOCTYPE html>
 <html ladng="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ewa Tryscien</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <meta property="og:title" content="" />
-  <meta property="og:type" content="" />
-  <meta property="og:url" content="" />
-  <meta property="og:image" content="" />
+    <style>
+      /* latin-ext */
+      @font-face {
+        font-family: "Roboto Condensed";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: local("Roboto Condensed"), local("RobotoCondensed-Regular"),
+          url(https://fonts.gstatic.com/s/robotocondensed/v18/ieVl2ZhZI2eCN5jzbjEETS9weq8-19y7DQk6YvNkeg.woff2)
+            format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      /* latin */
+      @font-face {
+        font-family: "Roboto Condensed";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: local("Roboto Condensed"), local("RobotoCondensed-Regular"),
+          url(https://fonts.gstatic.com/s/robotocondensed/v18/ieVl2ZhZI2eCN5jzbjEETS9weq8-19K7DQk6YvM.woff2)
+            format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+    </style>
 
-  <style>
-    /* latin-ext */
-    @font-face {
-      font-family: 'Roboto';
-      font-style: normal;
-      font-weight: 400;
-      font-display: swap;
-      src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7GxKKTU1Kvnz.woff2) format('woff2');
-      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-    }
-    /* latin */
-    @font-face {
-      font-family: 'Roboto';
-      font-style: normal;
-      font-weight: 400;
-      font-display: swap;
-      src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2) format('woff2');
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-    }
-    /* latin-ext */
-    @font-face {
-      font-family: 'Roboto Condensed';
-      font-style: normal;
-      font-weight: 400;
-      font-display: swap;
-      src: local('Roboto Condensed'), local('RobotoCondensed-Regular'), url(https://fonts.gstatic.com/s/robotocondensed/v18/ieVl2ZhZI2eCN5jzbjEETS9weq8-19y7DQk6YvNkeg.woff2) format('woff2');
-      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-    }
-    /* latin */
-    @font-face {
-      font-family: 'Roboto Condensed';
-      font-style: normal;
-      font-weight: 400;
-      font-display: swap;
-      src: local('Roboto Condensed'), local('RobotoCondensed-Regular'), url(https://fonts.gstatic.com/s/robotocondensed/v18/ieVl2ZhZI2eCN5jzbjEETS9weq8-19K7DQk6YvM.woff2) format('woff2');
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-    }
-  </style>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <script src="javascript/main.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-  <meta name="theme-color" content="#fafafa">
-</head>
-
-<body>
-
-  <div class="page-wrapper">
-<!--
-    <nav class="navigation-bar">
-      <a href="#about">About me</a> |
-      <a href="#education">Education</a> |
-      <a href="#work">Work experience</a> |
-      <a href="#skills">Skills</a> |
-      <a href="#contact">Contact me</a>
-    </nav>
-  -->
-
-    <div class="main-hero">
-      <div class="circles-container">
-
-        <a href="#about" id="about-circle">
-          <button class="about circle">About me</button>
-     <!--     <div class="about circle">
+  <body>
+    <section class="hero">
+      <div class="buttons-container">
+        <a href="#about">
+          <div class="about button">
             <h2>About me</h2>
-          </div>-->
+          </div>
         </a>
-
         <a href="#education">
-          <button class="education circle">Education</button>
-      <!--    <div class="education circle">
+          <div class="education button">
             <h2>Education</h2>
-          </div>-->
+          </div>
         </a>
-        
         <a href="#work">
-          <button class="work circle">Work experience <br>& Projects</button>
+          <div class="work button">
+            <h2 id="work-button">Work experience <br />& Projects</h2>
+          </div>
         </a>
 
         <a href="#skills">
-          <button class="skills circle">Skills</button>
+          <div class="skills button">
+            <h2>Skills</h2>
+          </div>
         </a>
-
-      <!--
+        <!--
         <div class="contact circle" id="contact">
           <h2>Contact me</h2>
         </div>
-      -->
+      --></div>
+
+      <div class="hero-title">
+        <h1>Ewa Tryścień</h1>
       </div>
-   
-      <div class="title-wrapper">
-        <h1>Ewa Tryścień</h1> 
+    </section>
+
+    <section class="about-section chapter" id="about">
+      <h3>About me...</h3>
+      <p class="section-text">
+        International, bi-lingual Computer Science graduate based in Birmingham,
+        UK. Keen to learn new technologies and work as part of a team. I’m
+        particularly interested in Frontend and client facing application
+        development.
+      </p>
+    </section>
+
+    <section class="education-section chapter" id="education">
+      <h3>Education</h3>
+      <p class="paragraph-title">
+        Wroclaw University of Science and Technology – Bachelor of Computer
+        Science
+      </p>
+      <p>October 2013 – July 2017</p>
+      <p>
+        • Studied object oriented programming, algorithms, data structures, x86
+        assembly, digital circuits, networking.<br />
+        • For my thesis I wrote an Android mobile app for managing restaurants.
+        <br />
+        • Graduated with Polish grade 4.5 equivalent to UK 2:1.
+      </p>
+    </section>
+
+    <section class="work-section chapter" id="work">
+      <h3>Work experience and projects</h3>
+      <div class="box">
+        <ul class="first-list">
+          <li>
+            <span></span>
+            <div class="title">My personal website</div>
+            <div class="info">
+              • Built this website using pure HTML, CSS and JavaScript.<br />
+              • Continuously deployed using
+              <a
+                class="link-git"
+                href="https://github.com/ewatryscien/mywebsite"
+                target="_blank"
+                >Docker and GitHub Actions.</a
+              >
+            </div>
+            <div class="time">
+              <!--<span>February 2015</span>-->
+            </div>
+          </li>
+          <li>
+            <span></span>
+            <div class="title">IASE Sp. z o.o., Wrocław, Poland</div>
+            <div class="info">
+              • Designed and built a web page for the company using CSS, HTML
+              and Wordpress.<br />
+              • Worked with the designer to develop a consistent design between
+              the new website and physical brochures.
+            </div>
+            <div class="time">
+              <span>July 2019</span>
+              <span>April 2019</span>
+            </div>
+          </li>
+          <li>
+            <span></span>
+            <div class="title">Hostgreen, Málaga, Spain</div>
+            <div class="info">
+              • Designed and built a dynamic web form for marketing data capture
+              using CSS, HTML, and PHP.<br />
+              • Fixed bugs on customer websites, and imported and created
+              content for a new website using WordPress. • Localised customer
+              websites from .es domains in Spanish to .com domains in English.
+            </div>
+            <div class="time">
+              <span>March 2018</span>
+              <span>September 2017</span>
+            </div>
+          </li>
+          <!--<span>GRADUATED</span>-->
+          <li>
+            <span></span>
+            <div class="title">TD Sistemas, Málaga, Spain</div>
+            <div class="info">
+              • Part of an agile software engineering team building a product
+              for managing gyms.<br />
+              • Worked on the Java backend and web based frontend on reporting
+              and charting data features using SQL and the Vaadin framework.<br />
+              • Set up Linux based servers, gaining knowledge of the command
+              line and Linux system administration.
+            </div>
+            <div class="time">
+              <span>September 2016</span>
+              <span>July 2016</span>
+            </div>
+          </li>
+          <li>
+            <span></span>
+            <div class="title">University project for Thaumatec Sp. z o.o.</div>
+            <div class="info">
+              • Built a Smart Home application as part of a project team in
+              collaboration with Thaumatec.<br />
+              • Worked using Agile methodologies (Scrum). <br />
+              • Worked on the frontend, designing and building a mobile web
+              application using Angular.js.
+            </div>
+            <div class="time">
+              <!--<span>February 2015</span>-->
+            </div>
+          </li>
+          <li>
+            <span></span>
+            <div class="title">RKB Sp. z o.o., Wrocław, Poland</div>
+            <div class="info">
+              • Managed, organised and sorted data.<br />
+              • Accurately transferred data from paper archives to a new digital
+              system.
+            </div>
+            <div class="time">
+              <span>August 2017</span>
+              <span>February 2015</span>
+            </div>
+          </li>
+        </ul>
       </div>
+    </section>
 
-    </div>
-
-    <div class="content-container">
-
-      <div class="about-section chapter" id="about">
-        <h3>About me...</h3>
-        <div class="section-wrapper">
-          <p class="section-text">
-            International, bi-lingual Computer Science graduate based in London.
-            Keen to learn new technologies and work as part of a team.
-            I’m particularly interested in frontend and client facing 
-            application development.  
-          </p>
-        </div> 
-      </div>
-
-      <div class="education-section chapter" id="education">
-        <h3>Education</h3>
-        <div class="section-wrapper">
-          <p class="paragraph-title">Wroclaw University of Science and Technology – Bachelor of Computer Science</p>
-          <p>October 2013 – July 2017</p>
-          <p>• Studied object oriented programming, algorithms, data structures, x86 assembly, digital circuits, networking.<br>
-            • For my thesis I wrote an Android mobile app for managing restaurants. <br>
-            • Graduated with Polish grade 4.5 equivalent to UK 2:1.
-          </p>
-        </div> 
-      </div>
-
-
-      <div class="work-section chapter" id="work">
-        <h3>Work experience and projects</h3>
-
-        <div class="box">
-          <ul class="first-list">
-            <li>
-              <span></span>
-              <div class="title">My personal website</div>
-              <div class="info">• Built this website using pure HTML, CSS and JavaScript.<br>
-                • Continuously deployed using <a href="https://github.com/ewatryscien/mywebsite" target="_blank">Docker and GitHub Actions.</a></div>
-              <div class="time">
-                <!--<span>February 2015</span>-->
-              </div>
-            </li>
-            <li>
-              <span></span>
-              <div class="title">IASE Sp. z o.o., Wrocław, Poland</div>
-              <div class="info">• Designed and built a web page for the company using CSS, HTML and Wordpress.<br>
-                • Worked with the designer to develop a consistent design between the new website and physical brochures.
-              </div>
-              <div class="time">
-                <span>July 2019</span>
-                <span>April 2019</span>
-              </div>
-            </li>
-            <li>
-              <span></span>
-              <div class="title">Hostgreen, Málaga, Spain</div>
-              <div class="info">• Designed and built a dynamic web form for marketing data capture using CSS, HTML, and PHP.<br>
-                • Fixed bugs on customer websites, and imported and created content for a new website using WordPress.
-                • Localised customer websites from .es domains in Spanish to .com domains in English.</div>
-              <div class="time">
-                <span>March 2018</span>
-                <span>September 2017</span>
-              </div>
-            </li>
-            <!--<span>GRADUATED</span>-->
-            <li>
-              <span></span>
-              <div class="title">TD Sistemas, Málaga, Spain</div>
-              <div class="info">• Part of an agile software engineering team building a product for managing gyms.<br>
-                • Worked on the Java backend and web based frontend on reporting and charting data features using SQL and the Vaadin framework.<br>
-                • Set up Linux based servers, gaining knowledge of the command line and Linux system administration.</div>
-              <div class="time">
-                <span>September 2016</span>
-                <span>July 2016</span>
-              </div>
-            </li>
-            <li>
-              <span></span>
-              <div class="title">University project for Thaumatec Sp. z o.o.</div>
-              <div class="info">• Built a Smart Home application as part of a project team in collaboration with Thaumatec.<br>
-                • Worked using Agile methodologies (Scrum). <br>
-                • Worked on the frontend, designing and building a mobile web application using Angular.js.</div>
-              <div class="time">
-                <!--<span>February 2015</span>-->
-              </div>
-            </li>
-            <li>
-              <span></span>
-              <div class="title">RKB Sp. z o.o., Wrocław, Poland</div>
-              <div class="info">• Managed, organised and sorted data.<br>
-                • Accurately transferred data from paper archives to a new digital system.</div>
-              <div class="time">
-                <span>August 2017</span>
-                <span>February 2015</span>
-              </div>
-            </li>
-
-          </ul>
-        </div>
-      </div>
-
-      <div class="skills-section chapter" id="skills">
-        <h3>My skills</h3>
-        <!--<div class="section-wrapper">-->
-          <h5>Technologies</h5>
-            <ul>
-              <li class="paragraph-title">JavaScript, Node.js, Express.js</li>
-              <p>Node.js, Express.js<br>
-              Writing application level code to interact with APIs, RESTful JSON Web Services</p>
-              <li class="paragraph-title">HTML</li>
-              <p></p>
-              <li class="paragraph-title">CSS, SCSS</li>
-              <p>Frameworks (Bootstrap) <br>
-                CSS pre-processors (SASS)
-              </p>
-              <li class="paragraph-title">Basic knowledge of Java, C++ and SQL</li>
-              <p></p>
-            </ul>   
-          <h5>Languages</h5>
-          <ul>
-            <li>Polish - native</li>
-            <li>English - fluent (C2) / professional working proficiency</li>
-            <li>Spanish - beginner (A1)</li>
-          </ul>
-          <h5>Achievements</h5>
-          <p id="kwn">Panasonic Kid Witness News
-            <br>Tokyo 2009
-            <br>Grand Prix/Best Documentary – video editor</p>
-          <a href="https://panasonic.net/kwn/library/videos/video-94.html?_ga=2.11108471.2109548419.1591644710-1031414776.1591644710" target="_blank" id="kwn-link">See video</a>
-        </div> 
-      </div>
-
-    </div>
-
+    <section class="skills-section chapter" id="skills">
+      <h3>My skills</h3>
+      <h5>Technologies</h5>
+      <ul>
+        <li class="paragraph-title">JavaScript, Node.js, Express.js</li>
+        <p>
+          Node.js, Express.js<br />
+          Writing application level code to interact with APIs, RESTful JSON Web
+          Services
+        </p>
+        <li class="paragraph-title">HTML</li>
+        <p></p>
+        <li class="paragraph-title">CSS, SCSS</li>
+        <p>
+          Frameworks (Bootstrap) <br />
+          CSS pre-processors (SASS)
+        </p>
+        <li>Basic knowledge of Java, C++ and SQL</li>
+        <p></p>
+      </ul>
+      <h5>Languages</h5>
+      <ul>
+        <li>Polish - native</li>
+        <li>English - fluent (C2) / professional working proficiency</li>
+        <li>Spanish - beginner (A1)</li>
+      </ul>
+      <h5>Achievements</h5>
+      <p id="kwn">
+        Panasonic Kid Witness News <br />Tokyo 2009 <br />Grand Prix/Best
+        Documentary – video editor
+      </p>
+      <a
+        href="https://panasonic.net/kwn/library/videos/video-94.html"
+        target="_blank"
+        id="kwn-link"
+        >See video</a
+      >
+    </section>
 
     <footer class="contact-section chapter" id="contact">
       <h3>Contact me</h3>
       <p>Email: ewa.tryscien@gmail.com</p>
       <div class="socialmedia">
-        
-        <a href="https://www.linkedin.com/in/ewa-try%C5%9Bcie%C5%84-b20545140/" target="_blank" class="smicon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
-        <a href="https://www.facebook.com/ewa.tryscien" target="_blank" class="smicon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg></a>
-        <a href="https://www.instagram.com/autobussiespoznil/" target="_blank" class="smicon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
-        <a href="https://www.linkedin.com/in/ewa-try%C5%9Bcie%C5%84-b20545140/" target="_blank" class="smicon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a>
-      </div> 
-
-      <!--<button class="theme-button" id="theme"><img src="img/gril3.png">Dark theme</button>-->
+        <a
+          href="https://www.linkedin.com/in/ewa-try%C5%9Bcie%C5%84-b20545140/"
+          target="_blank"
+          class="smicon"
+          ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path
+              d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+            /></svg
+        ></a>
+        <a
+          href="https://www.facebook.com/ewa.tryscien"
+          target="_blank"
+          class="smicon"
+          ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path
+              d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+            /></svg
+        ></a>
+        <a
+          href="https://www.instagram.com/autobussiespoznil/"
+          target="_blank"
+          class="smicon"
+          ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path
+              d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+            /></svg
+        ></a>
+        <a href="https://github.com/ewatryscien" target="_blank" class="smicon"
+          ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+            <path
+              d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+            /></svg
+        ></a>
+      </div>
     </footer>
-  
-  </div>
 
-</body>
-
+    <script src="javascript/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </body>
 </html>
